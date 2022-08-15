@@ -6,7 +6,7 @@ def quit():
     print("****Have a good Day****")
 
 if playing == "1":
-    print("Game starting now \n")
+    print("Okay! Let's play :) \n")
     score = 0
     count = 0
 elif playing == "2":
@@ -24,11 +24,10 @@ for i in range(len(questions)):
     answer = input(questions[i]+" ")
     if answer == answers[i]:
         score+=1
-        print("correct answer")
+        print("Correct!")
     else:
-        print("wrong answer")
+        print("Wrong!")
     count+=1
-    print(f"Total Score: {score}")
 
 print(f"Game Over \nYour score is: {score}")
 
